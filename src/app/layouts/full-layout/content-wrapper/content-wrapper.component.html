@@ -1,0 +1,21 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Title
+      <small>Optional description</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li *ngFor="let breadcrumb of breadcrumbs; let last = last">
+        <a *ngIf="!last" [routerLink]="breadcrumb.url"><i class="fa fa-dashboard"> {{breadcrumb.label.title}}</i></a>
+        <span *ngIf="last" [routerLink]="breadcrumb.url"> {{breadcrumb.label.title}}</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content container-fluid">
+    <router-outlet></router-outlet>
+  </section>
+  <!-- /.content -->
+</div>

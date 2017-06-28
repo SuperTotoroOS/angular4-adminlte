@@ -18,9 +18,18 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/bootstrap/css/bootstrap.min.css",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/dist/css/AdminLTE.min.css",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/dist/css/skins/_all-skins.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/._admin-lte@2.3.11@admin-lte/plugins/jQuery/jquery-2.2.3.min.js",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/bootstrap/js/bootstrap.min.js",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/dist/js/app.min.js",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/plugins/slimScroll/jquery.slimscroll.min.js",
+        "../node_modules/._admin-lte@2.3.11@admin-lte/plugins/fastclick/fastclick.min.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
